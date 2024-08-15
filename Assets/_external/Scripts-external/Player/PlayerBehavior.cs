@@ -97,7 +97,7 @@ public class PlayerBehavior : MonoBehaviour
         {
             if (hittedEnemy.TryGetComponent(out Health enemyHealth))
             {
-                enemyHealth.TakeDamage();
+                //enemyHealth.TakeDamage();
             }
         }
     }

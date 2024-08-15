@@ -5680,7 +5680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1909762062
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5859,7 +5859,7 @@ MonoBehaviour:
   attackOffset: {x: 1, y: -0.5, z: 0}
   attackMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
 --- !u!114 &1909762068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6057,7 +6057,7 @@ MonoBehaviour:
   attackPosition: {fileID: 739592300}
   attackLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
 --- !u!114 &1981913512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6074,7 +6074,7 @@ MonoBehaviour:
   checkerSize: {x: 0.3, y: 0.1}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
 --- !u!114 &1981913514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6099,7 +6099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d5b66a5a4df42d4c99dd63f51380cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 3
+  lives: 50
 --- !u!95 &1981913516
 Animator:
   serializedVersion: 5

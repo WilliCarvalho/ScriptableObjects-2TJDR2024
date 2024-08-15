@@ -18,6 +18,8 @@ public class MeleeEnemy : BaseEnemy
         base.Awake();
         base.health.OnHurt += PlayHurtAudio;
         base.health.OnDead += PlayDeadAudio;
+
+        GetComponent<SpriteRenderer>().color = enemyType.Color;
     }
 
     protected override void Update()
@@ -43,7 +45,7 @@ public class MeleeEnemy : BaseEnemy
         if (CheckPlayerInDetectArea().TryGetComponent(out Health playerHealth))
         {
             print("Making player take damage");
-            playerHealth.TakeDamage();
+            playerHealth.TakeDamage(enemyType.Damage);
         }
     }
 

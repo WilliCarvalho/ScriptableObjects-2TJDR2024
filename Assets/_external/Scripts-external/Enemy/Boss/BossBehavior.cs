@@ -96,7 +96,7 @@ public class BossBehavior : MonoBehaviour
         Collider2D collisionInfo = Physics2D.OverlapCircle(attackPosition, attackSize, attackMask);
         if (collisionInfo != null)
         {
-            collisionInfo.GetComponent<Health>().TakeDamage();
+            //collisionInfo.GetComponent<Health>().TakeDamage();
         }
     }
 

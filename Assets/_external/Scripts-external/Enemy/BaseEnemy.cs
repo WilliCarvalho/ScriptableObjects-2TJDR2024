@@ -9,6 +9,8 @@ public abstract class BaseEnemy : MonoBehaviour
     protected Health health;
 
     [SerializeField] private ParticleSystem hitParticle;
+    [SerializeField] protected EnemyType[] enemyTypes;
+    protected EnemyType enemyType;
 
     protected bool canAttack = true;
 
@@ -20,7 +22,10 @@ public abstract class BaseEnemy : MonoBehaviour
 
         health.OnHurt += HandleHurt;
         health.OnDead += HandleDeath;
+        enemyType = enemyTypes[Random.Range(0, enemyTypes.Length)];
     }
+
+    //private int PickRandonEnemyTypesIndex() => Random.Range(0, enemyTypes.Length);
 
     protected abstract void Update();
 
