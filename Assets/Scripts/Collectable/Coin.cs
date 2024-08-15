@@ -1,4 +1,3 @@
-using System;
 using StarterAssets;
 using UnityEngine;
 
@@ -12,7 +11,7 @@ public class Coin : MonoBehaviour
     {
         if (other.TryGetComponent<ThirdPersonController>(out var player))
         {
-            GameManager.Instance.AddCoinsCollected();
+            GameManager2.Instance.AddCoinsCollected();
             Destroy(this.gameObject);
         }
     }

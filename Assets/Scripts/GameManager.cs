@@ -1,27 +1,56 @@
+using System;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public InputManager InputManager { get; private set; }
 
-    private int coinsCollected = 0;
-    [SerializeField] private int resetLevelWhenCollect = 5;
+    [Header("Dynamic Game objects")]
+    [SerializeField] private GameObject bossDoor;
+    [SerializeField] private PlayerBehavior player;
+
+    [Header("Managers")]
+    public UIManager UIManager;
+    public AudioManager AudioManager;
+
+    private int totalKeys;
+    private int keysLeftToCollect;
 
     private void Awake()
     {
+        if (Instance != null) Destroy(this.gameObject);
         Instance = this;
+
+        InputManager = new InputManager();
+
+        totalKeys = FindObjectsOfType<CollectableKey>().Length;
+        keysLeftToCollect = totalKeys;
+        UIManager.UpdateKeysLeftText(totalKeys, keysLeftToCollect);
     }
 
-    public int GetCoinsCollected() => coinsCollected;
-
-    public void AddCoinsCollected()
+    public void UpdateKeysLeft()
     {
-        coinsCollected++;
-        print($"Coins Collected: {coinsCollected} ");
-        if (coinsCollected >= resetLevelWhenCollect)
+        keysLeftToCollect--;
+        UIManager.UpdateKeysLeftText(totalKeys, keysLeftToCollect);
+        CheckAllKeysCollected();
+    }
+
+    private void CheckAllKeysCollected()
+    {
+        if(keysLeftToCollect <= 0)
         {
-            SceneManager.LoadScene("Persistência de dados");
+            Destroy(bossDoor);
         }
+    }
+
+    public void UpdateLives(int amount)
+    {
+        UIManager.UpdateLivesText(amount);
+    }
+
+    public PlayerBehavior GetPlayer()
+    {
+        return player;
     }
 }
