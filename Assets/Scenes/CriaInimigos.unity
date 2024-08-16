@@ -521,6 +521,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8937204074536341329, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
+      propertyPath: enemyType
+      value: 
+      objectReference: {fileID: 11400000, guid: 835dc56d2285a5e4e8e9d93a4b59ec2b, type: 2}
+    - target: {fileID: 8937204074536341329, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -648,6 +656,14 @@ PrefabInstance:
     - target: {fileID: 2919689756584835665, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
       propertyPath: m_Name
       value: Enemy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8937204074536341329, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
+      propertyPath: enemyType
+      value: 
+      objectReference: {fileID: 11400000, guid: 25438bfd64a11844688ef9d7aaa38c18, type: 2}
+    - target: {fileID: 8937204074536341329, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1098,7 +1114,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 739592300}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: attackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2155,6 +2171,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8937204074536341329, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
+      propertyPath: enemyType
+      value: 
+      objectReference: {fileID: 11400000, guid: 25438bfd64a11844688ef9d7aaa38c18, type: 2}
+    - target: {fileID: 8937204074536341329, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2257,6 +2281,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8937204074536341329, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
+      propertyPath: enemyType
+      value: 
+      objectReference: {fileID: 11400000, guid: 835dc56d2285a5e4e8e9d93a4b59ec2b, type: 2}
+    - target: {fileID: 8937204074536341329, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2319,6 +2351,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8937204074536341329, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
+      propertyPath: enemyType
+      value: 
+      objectReference: {fileID: 11400000, guid: 25438bfd64a11844688ef9d7aaa38c18, type: 2}
+    - target: {fileID: 8937204074536341329, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2341,7 +2381,7 @@ GameObject:
   - component: {fileID: 1117375844}
   - component: {fileID: 1117375843}
   - component: {fileID: 1117375845}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4739,6 +4779,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8937204074536341329, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
+      propertyPath: enemyType
+      value: 
+      objectReference: {fileID: 11400000, guid: 835dc56d2285a5e4e8e9d93a4b59ec2b, type: 2}
+    - target: {fileID: 8937204074536341329, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4800,6 +4848,14 @@ PrefabInstance:
     - target: {fileID: 2919689756584835665, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
       propertyPath: m_Name
       value: Enemy (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8937204074536341329, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
+      propertyPath: enemyType
+      value: 
+      objectReference: {fileID: 11400000, guid: 25438bfd64a11844688ef9d7aaa38c18, type: 2}
+    - target: {fileID: 8937204074536341329, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5644,6 +5700,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8937204074536341329, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
+      propertyPath: enemyType
+      value: 
+      objectReference: {fileID: 11400000, guid: 25438bfd64a11844688ef9d7aaa38c18, type: 2}
+    - target: {fileID: 8937204074536341329, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5890,7 +5954,7 @@ GameObject:
   - component: {fileID: 1981913512}
   - component: {fileID: 1981913514}
   - component: {fileID: 1981913515}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6074,7 +6138,7 @@ MonoBehaviour:
   checkerSize: {x: 0.3, y: 0.1}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
 --- !u!114 &1981913514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6133,7 +6197,7 @@ GameObject:
   - component: {fileID: 2004919321}
   - component: {fileID: 2004919320}
   - component: {fileID: 2004919322}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6381,7 +6445,7 @@ GameObject:
   - component: {fileID: 2071719492}
   - component: {fileID: 2071719491}
   - component: {fileID: 2071719493}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Platform (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7711,6 +7775,14 @@ PrefabInstance:
     - target: {fileID: 2919689756584835665, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8937204074536341329, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
+      propertyPath: enemyType
+      value: 
+      objectReference: {fileID: 11400000, guid: 835dc56d2285a5e4e8e9d93a4b59ec2b, type: 2}
+    - target: {fileID: 8937204074536341329, guid: 4199e5acc2e78114994c82bb8df506d4, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -1,25 +1,26 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class GameManager2 : MonoBehaviour
 {
     public static GameManager2 Instance;
 
-    private int coinsCollected = 0;
+    [SerializeField] private CoinCollection Coins;
     [SerializeField] private int resetLevelWhenCollect = 5;
+    [SerializeField] private DisplayCoins coinsText;
 
     private void Awake()
     {
         Instance = this;
+        coinsText.UpdateText(Coins.coinsCollected);
     }
-
-    public int GetCoinsCollected() => coinsCollected;
 
     public void AddCoinsCollected()
     {
-        coinsCollected++;
-        print($"Coins Collected: {coinsCollected} ");
-        if (coinsCollected >= resetLevelWhenCollect)
+        Coins.Addcoins(1);
+        coinsText.UpdateText(Coins.coinsCollected);
+        if (Coins.coinsCollected >= resetLevelWhenCollect)
         {
             SceneManager.LoadScene("Persistência de dados");
         }
